@@ -1,0 +1,72 @@
+﻿=----------------------------------------
+= Ohjelmointi 2, 2019
+=----------------------------------------
+= Katso <a href=".." target="_top">työ vaiheittain</a>
+=
+@https://trac.cc.jyu.fi/projects/ohj2ht/browser/k2019/laitjjxz = Työ versionhallinnassa
+
+= <h3>Ohjelman suunnitelma</h3>
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/laitjjxz = Suunnitelma TIMIssä
+=
+kuvat/aloitus.PNG = aloituskuva(scene)
+kuvat/haku.PNG = hakukenttä(scene)
+kuvat/muokkaa.PNG = muokkauskenttä tietylle pelaajalle(scene)
+kuvat/muokkaarata.PNG = radanmuokkauskenttä(scene)
+kuvat/paaIkkuna.PNG = paaikkuna ohjelmalle(scene)
+kuvat/poisto.PNG = poisto pelaajalle(scene)
+kuvat/virhe.PNG = virheikkuna(scene)
+kuvat/tulostus.PNG = tulostusikkuna(scene)
+kuvat/tietoja.PNG = tietoja ikkuna(scene)
+kuvat/pohja.jpg = tietorakenteen kuva(draw.io)
+=
+= <h3>Ajettava ohjelma</h3>
+fribaPedia.jar = ajettava ohjelma, lataa ja aja
+=
+= <h3>Ohjelman esisuunnitelma</h3>
+@https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/laitjjxz = Suunnitelma TIMissä
+=
+kuvat/paaikkuna.jpg = ohjelman pääikkuna (käsin piirretty)
+kuvat/aloituskuva.jpg      = kuva ohjelman alusta (kp)
+kuvat/virhe.jpg   = virheilmoitus jos tiedostoa ei ole (kp)
+
+= <h3>Tietorakenteiden käsittely koodissa</h3>
+src/rekisteri/Frisbeegolfrekisteri.java = rekisteri joka välittää pyynnöt eteenpäin
+src/rekisteri/Pelaaja.java = pelaaja joka osaa huolehtia omista tiedoistaan
+src/rekisteri/Pelaajat.java = pelaajien käsittely ns yhdessä
+src/rekisteri/Rata.java = rata-luokka, rata huolehtii omista tiedoistaan
+src/rekisteri/Radat.java = radat-luokka, ratojen käsittely yhdessä
+src/rekisteri/SailoException.java = poikkeusten käsittely
+
+
+
+= <h3>Tietokanta-luokat</h3>
+src/kanta/RatingTarkistus.java = arpoo random rating ja tarkistaa onko rating järkevä
+
+
+=
+= <h3>Käyttöliittymän ulkoasu JavaFX:llä</h3>
+src/fxFrisbeeRekisteri/FrisbeeRekisteriMain.java = ohjelman käynnistävä pääluokka
+src/fxFrisbeeRekisteri/FrisbeeRekisteriGUIView.fxml = kerhon varsinainen käyttöliittymä
+src/fxFrisbeeRekisteri/FrisbeeRekisteriGUIController.java = ohjain joka käsittelee käyttöliittymästä tulevat tapahtumat
+src/fxFrisbeeRekisteri/frisbeerekisteri.css = tyylitiedosto (ei vielä muutettu mitään)
+
+src/fxFrisbeeRekisteri/AloitusGUIView.fxml = paneli josta ohjelma alkaa
+src/fxFrisbeeRekisteri/AloitusGUIController.java = aluitus dialogin kontrolleri
+src/fxFrisbeeRekisteri/MuokkaaGUIView.fxml = pelaajan tietojen täydennys ikkuna
+src/fxFrisbeeRekisteri/MuokkaaRataGUIView.fxml = rata tulosten muokkaus ikkuna
+src/fxFrisbeeRekisteri/PaaIkkunaGUIView.fxml = käyttöliittymän varsinainen pääikkuna
+src/fxFrisbeeRekisteri/TulostusGUIView.fxml = tulostus ja sen esikatselu ikkuna
+src/fxFrisbeeRekisteri/TietojaGUIView.fxml = tietoja ikkuna, jossa versio ja tekijöiden nimet
+src/fxFrisbeeRekisteri/PelaajaDialogController.java = pelaajan muokkausikkunan controlleri
+src/fxFrisbeeRekisteri/RataDialogController.java = radan muokkausikkunan controlleri
+
+
+=
+= <h3>Muita tiedostoja</h3>
+build.xml = Ant-skripti joka tekee .jarin
+.project = Eclipsen projekti
+.classpath = Eclipsen luokkapolku
+.settings/org.eclipse.jdt.core.prefs = Eclipsen kääntäjän varoitukset
+ComTest.ini = asetetaan testit menemään eri hakemistoon
+
+

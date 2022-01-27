@@ -1,0 +1,13 @@
+=----------------------------------------
+= Ohjelmointi 2, 2019
+=----------------------------------------
+= Katso <a href=".." target="_top">työ vaiheittain</a>
+=
+@https://trac.cc.jyu.fi/projects/ohj2ht/browser/k2019/laitjjxz = Työ versionhallinnassa
+
+= <h3>Ohjelman suunnitelma</h3>
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2019k/ht/laitjjxz = Suunnitelma TIMIssä
+=
+kuvat/paaikkunak.png = ohjelman pääikkuna (käsin piirretty)
+kuvat/avaak.png      = kuva ohjelman alusta (kp)
+kuvat/eiaukeak.png   = virheilmoitus jos tiedostoa ei ole (kp)
